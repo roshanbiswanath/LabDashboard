@@ -16,17 +16,22 @@
 
 <body>
     <div class="page">
-        <div class="title d-flex flex-row mx-auto my-auto align-items-center justify-content-around">
+        <div class="title d-flex flex-row align-items-center justify-content-around">
             <div>
                 <img class="logo" src="./assets/photo.jpg" alt="">
             </div>
             <div>SOA FABLAB</div>
         </div>
+        <!--
         <div id="open" class="status shadow-lg rounded d-flex align-items-center justify-content-around">
             <span>OPEN</span>
         </div>
         <div id="closed" class="status shadow-lg rounded d-flex align-items-center justify-content-around">
             <span>CLOSED</span>
+        </div>
+        -->
+        <div id="LabStatus" class="status shadow-lg rounded d-flex align-items-center justify-content-around">
+            <span>OPEN</span>
         </div>
         <div class="countdown shadow-lg bg-white rounded d-flex justify-content-around align-items-center">
             <ul id="countdown">
@@ -48,11 +53,13 @@
                 </li>
             </ul>
         </div>
-        <div class="carousal shadow-lg bg-white rounded d-flex justify-content-around align-items-center p-3">
+        <div id="carousal" class="carousal shadow-lg bg-white rounded d-flex justify-content-around align-items-center">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item image active" data-bs-interval="3000">
-                        <img src="./assets/271191258_2057244351099308_9022260579650513705_n.jpg" alt="...">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="image">
+                            <img src="./assets/271191258_2057244351099308_9022260579650513705_n.jpg" alt="...">
+                        </div>
                     </div>
                     <!--
                     <div class="carousel-item" data-bs-interval="10000"><video autoplay loop>
@@ -61,7 +68,7 @@
                         </video>
                     </div>
                     -->
-                    <div class="carousel-item" data-bs-interval="8000"><video width="720" autoplay loop>
+                    <div class="carousel-item" data-bs-interval="8000"><video class="video" autoplay loop>
                             <source src="./assets/lab.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -71,11 +78,15 @@
                         <iframe src="https://drive.google.com/file/d/1KnM3F0QLb9nK0xqNxxe7bufJA7Ggx95t/preview"
                             width="583.2" height="388.8" allow="autoplay"></iframe>
                     </div>-->
-                    <div class="carousel-item image" data-bs-interval="3000">
-                        <img src="./assets/DSC_5709.jpg" class="img-fluid" alt="...">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image">
+                            <img src="./assets/DSC_5709.jpg" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item image" data-bs-interval="3000">
-                        <img src="./assets/WhatsApp Image 2022-05-04 at 9.21.29 PM.jpeg" class="img-fluid" alt="...">
+                    <div class="carousel-item" data-bs-interval="30000">
+                        <div class="image">
+                            <img src="./assets/WhatsApp Image 2022-05-04 at 9.21.29 PM.jpeg" alt="...">
+                        </div>
                     </div>
                     <!--
                     <div class="carousel-item" data-bs-interval="3000">
@@ -108,6 +119,8 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
         <script src="js/timer.js"></script>
+        <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 .page {
     display: grid;
-    grid-template-columns: 5fr 2.5fr 2.5fr;
-    grid-template-rows: 18% 62% 3fr;
+    grid-template-columns: 48.5vw 24vw 24vw;
+    grid-template-rows: calc(18% - 1rem) calc(70% - 1rem) calc(14% - 1rem);
     grid-auto-columns: 1fr;
     gap: 1rem 1rem;
     grid-template-areas:
@@ -20,6 +20,7 @@
     font-size: 6rem;
     margin-left: 1rem;
     margin-top: 1rem;
+
 }
 
 .countdown {
@@ -36,6 +37,12 @@
 .carousal {
     grid-area: carousal;
     margin-left: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid #fff;
+    margin: 10px;
 }
 
 .event {
@@ -44,11 +51,18 @@
 
 }
 
+
 .next {
     grid-area: next;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+#LabStatus {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: white;
 }
 
 #open {
@@ -63,7 +77,6 @@
     color: white;
     font-size: 4rem;
     background: red;
-    display: none !important;
 
 }
 
@@ -96,19 +109,6 @@ ul#countdown li .label {
     height: 6rem;
     margin-right: 1rem;
     border-radius: 50%;
-}
-
-.image {
-    float: left;
-    width: 80%;
-    height: 400px;
-}
-
-.image img {
-    height: 100%;
-    max-width: 100%;
-    display: block;
-    margin: auto;
 }
 
 #scroll-container {
@@ -168,3 +168,22 @@ ul#countdown li .label {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
 }
+
+/*
+.image>img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.image {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+*/
