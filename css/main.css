@@ -17,9 +17,10 @@
     font-family: 'Poppins', sans-serif;
     grid-area: title;
     color: white;
-    font-size: 6rem;
+    font-size: 6vw;
     margin-left: 1rem;
     margin-top: 1rem;
+    line-height: 0.8em;
 
 }
 
@@ -116,7 +117,7 @@ ul#countdown li .label {
 }
 
 #scroll-text {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
     /* animation properties */

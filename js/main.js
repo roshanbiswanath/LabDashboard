@@ -19,7 +19,7 @@ function windowWasResized() {
 }
 */
 data = {
-    "status": "CLOSED"
+    "status": "OPEN"
 }
 setStatus(data.status)
 
@@ -37,12 +37,12 @@ function setStatus(status) {
     if (status == "OPEN") {
         labstatus.innerHTML = "OPEN"
         labstatus.style.backgroundColor = "green"
-        labstatus.style.fontSize = "5rem"
+        labstatus.style.fontSize = "6vw"
     }
     else {
         labstatus.innerHTML = "CLOSED"
         labstatus.style.backgroundColor = "red"
-        labstatus.style.fontSize = "4rem"
+        labstatus.style.fontSize = "5.5vw"
     }
 }
 
