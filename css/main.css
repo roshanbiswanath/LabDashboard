@@ -28,6 +28,8 @@
     grid-area: countdown;
     margin-top: 1rem;
     margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
 }
 
 .status {
@@ -39,6 +41,7 @@
     grid-area: carousal;
     margin-left: 1rem;
     overflow: hidden;
+
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -49,9 +52,18 @@
 .event {
     grid-area: event;
     margin-right: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid #fff;
+    margin: 10px;
 
 }
 
+#event {
+    height: 70vh;
+}
 
 .next {
     grid-area: next;
